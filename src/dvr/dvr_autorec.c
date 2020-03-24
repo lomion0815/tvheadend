@@ -404,6 +404,7 @@ dvr_autorec_create(const char *uuid, htsmsg_t *conf)
   dae->dae_start = -1;
   dae->dae_start_window = -1;
   dae->dae_enabled = 1;
+  dae->dae_record = DVR_AUTOREC_RECORD_DVR_PROFILE;
   dae->dae_config = dvr_config_find_by_name_default(NULL);
   LIST_INSERT_HEAD(&dae->dae_config->dvr_autorec_entries, dae, dae_config_link);
 
